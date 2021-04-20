@@ -63,6 +63,15 @@ class HomeCategories extends StatelessWidget {
       "tabDesc": "Xem tin tức mới nhất liên quan đến vi rút",
       "color": Colors.greenAccent[700],
     },
+    {
+      "imgBottom": -4.0,
+      "imgLeft": 8.0,
+      "imgPath": "assets/document.png",
+      "tabName": "Khai báo y tế",
+      "imgHeight": 130.0,
+      "tabDesc": "Khai báo y tế cá nhân",
+      "color": Colors.blueAccent[700],
+    },
   ];
 
   @override

@@ -1,3 +1,4 @@
+import 'package:MyCovid19/models/chat_bot.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
 import '../../screens/myths_page.dart';
@@ -6,6 +7,7 @@ import '../../screens/symptoms_page.dart';
 import '../../screens/updates_page.dart';
 import '../../screens/virus_details_page.dart';
 import '../../screens/stats_dashboard_screens/world_stat.dart';
+import '../../screens/health_declaration.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -51,6 +53,10 @@ class CategoryTab extends StatelessWidget {
       case ("Thống kê"):
         return () => Navigator.of(context)
             .push(MaterialPageRoute(builder: (context) => WorldStatScreen()));
+      case ("Khai báo y tế"):
+        return () => Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) =>
+                healthDeclarationScreen()));
     }
     return () {};
   }
