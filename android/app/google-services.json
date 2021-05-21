@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "13186453514",
+    "project_id": "glowing-sprite-302607",
+    "storage_bucket": "glowing-sprite-302607.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13186453514:android:97be7643a894e00e3d4ff3",
+        "android_client_info": {
+          "package_name": "com.alingam.moneymonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13186453514-afibpcorq49dm478u32jia5tnng1arip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT-oDVSA8pyVRib0kbdMHp8-0aJp0eZSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13186453514-afibpcorq49dm478u32jia5tnng1arip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13186453514:android:11b6aa8f6996e8293d4ff3",
+        "android_client_info": {
+          "package_name": "com.example.mapsdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13186453514-afibpcorq49dm478u32jia5tnng1arip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT-oDVSA8pyVRib0kbdMHp8-0aJp0eZSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13186453514-afibpcorq49dm478u32jia5tnng1arip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

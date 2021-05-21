@@ -1,5 +1,9 @@
 # This is a generated file; do not edit or check into version control.
 audioplayers=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\audioplayers-0.13.7\\
+flutter_plugin_android_lifecycle=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\flutter_plugin_android_lifecycle-1.0.11\\
+google_maps_flutter=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\google_maps_flutter-0.5.33\\
+location=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\location-3.2.4\\
+location_web=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\location_web-1.0.1\\
 path_provider=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\path_provider-1.6.28\\
 path_provider_linux=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\path_provider_linux-0.0.1+2\\
 path_provider_macos=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\path_provider_macos-0.0.4+8\\

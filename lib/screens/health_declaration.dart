@@ -1,3 +1,4 @@
+import 'package:MyCovid19/screens/googlemap.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
@@ -252,6 +253,19 @@ class _healthDeclarationState extends State<healthDeclarationScreen> {
                             setState(() {
                               dropdownValue3 = newValue;
                             });
+                          },
+                        ),
+                        SizedBox(height: 20,),
+                        IconButton(
+                          icon: Icon(Icons.map),
+                          alignment: Alignment.topLeft ,
+                          color: Colors.blue,
+                          iconSize: 30,
+                          onPressed: (){
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => googleMapScreen()),
+                            );
                           },
                         ),
                       ]
