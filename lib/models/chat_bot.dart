@@ -109,7 +109,7 @@ class _HomePageDialogflow extends State<HomePageDialogflow> {
         title: new Text("Tư vấn"),
       ),
       body: new Column(children: <Widget>[
-        new Flexible(
+        new Expanded(
             child: new ListView.builder(
               padding: new EdgeInsets.all(8.0),
               reverse: true,

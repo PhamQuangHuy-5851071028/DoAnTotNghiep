@@ -24,7 +24,12 @@ class _healthDeclarationState extends State<healthDeclarationScreen> {
         context: context,
         initialDate: selectedDate,
         firstDate: DateTime(1000, 8),
-        lastDate: DateTime(2101));
+        lastDate: DateTime(2101),
+        helpText: 'Chọn ngày sinh', // Can be used as title
+        cancelText: 'Hủy',
+        confirmText: 'Chọn',
+
+    );
     if (picked != null && picked != selectedDate)
       setState(() {
         selectedDate = picked;
@@ -46,230 +51,324 @@ class _healthDeclarationState extends State<healthDeclarationScreen> {
           centerTitle: true,
           title: Text("Khai báo y tế",
               style: TextStyle(color: Colors.black, fontSize: 24)),
-          backgroundColor: Colors.transparent,
+          backgroundColor: Colors.white,
           elevation: 0,
         ),
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(20.0),
           child: LayoutBuilder(
               builder: (ctx, constraint) =>
-                  Column(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: <Widget>[
-                        SizedBox(
-                          height: 60,
-                        ),
-                        AutoSizeText(
-                          "Họ và tên",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: "Montserrat",
-                            fontSize: 20,
-                            fontWeight: FontWeight.w700,
-                          ),
-                          stepGranularity: 1,
-                          maxFontSize: 31,
-                          maxLines: 2,
-                        ),
-                        TextField(
-                          textCapitalization: TextCapitalization.words,
-                          decoration: InputDecoration(
-                              prefixIcon: Icon(Icons.people),
-                              hintText: 'Nhập vào họ tên'
-                          ),
-                        ),
-                        SizedBox(height: 20,),
-                        AutoSizeText(
-                          "Ngày sinh",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: "Montserrat",
-                            fontSize: 20,
-                            fontWeight: FontWeight.w700,
-                          ),
-                          stepGranularity: 1,
-                          maxFontSize: 31,
-                          maxLines: 2,
-                        ),
-                        Row(
-                          children: [
-                            IconButton(
-                              onPressed: () => _selectDate(context),
-                              icon: Icon(Icons.drive_file_rename_outline),
-                            ),
+                        ListView(
+                          children: <Widget>[
                             AutoSizeText(
-                              "${selectedDate.toLocal()}".split(' ')[0],
+                              "Họ và tên",
                               style: TextStyle(
                                 color: Colors.black,
                                 fontFamily: "Montserrat",
-                                fontSize: 18,
-                                fontWeight: FontWeight.normal,
+                                fontSize: 20,
+                                fontWeight: FontWeight.w700,
                               ),
                               stepGranularity: 1,
                               maxFontSize: 31,
                               maxLines: 2,
                             ),
+                            TextField(
+                              textCapitalization: TextCapitalization.characters,
+                              decoration: InputDecoration(
+                                  prefixIcon: Icon(Icons.people),
+                                  hintText: 'Nhập vào họ tên'
+                              ),
+                            ),
+                            SizedBox(height: 20,),
+                            AutoSizeText(
+                              "Giới tính",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontFamily: "Montserrat",
+                                fontSize: 20,
+                                fontWeight: FontWeight.w700,
+                              ),
+                              stepGranularity: 1,
+                              maxFontSize: 31,
+                              maxLines: 2,
+                            ),
+                            TextField(
+                              textCapitalization: TextCapitalization.words,
+                              decoration: InputDecoration(
+                                  prefixIcon: Icon(Icons.people),
+                                  hintText: 'Nhập vào giới tính'
+                              ),
+                            ),
+                            SizedBox(height: 20,),
+                            AutoSizeText(
+                              "Ngày sinh",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontFamily: "Montserrat",
+                                fontSize: 20,
+                                fontWeight: FontWeight.w700,
+                              ),
+                              stepGranularity: 1,
+                              maxFontSize: 31,
+                              maxLines: 2,
+                            ),
+                            Row(
+                              children: [
+                                IconButton(
+                                  onPressed: () => _selectDate(context),
+                                  icon: Icon(Icons.drive_file_rename_outline),
+                                ),
+                                AutoSizeText(
+                                  "${selectedDate.toLocal()}".split(' ')[0],
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontFamily: "Montserrat",
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                  stepGranularity: 1,
+                                  maxFontSize: 31,
+                                  maxLines: 2,
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 20,),
+                            AutoSizeText(
+                              "Nhập quốc tịch",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontFamily: "Montserrat",
+                                fontSize: 20,
+                                fontWeight: FontWeight.w700,
+                              ),
+                              stepGranularity: 1,
+                              maxFontSize: 31,
+                              maxLines: 2,
+                            ),
+                            TextField(
+                              textCapitalization: TextCapitalization.words,
+                              decoration: InputDecoration(
+                                  prefixIcon: Icon(Icons.flag),
+                                  hintText: 'Nhập vào quốc tịch'
+                              ),
+                            ),
+                            SizedBox(height: 20,),
+                            AutoSizeText(
+                              "Số hộ chiếu / CMND / CCCD",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontFamily: "Montserrat",
+                                fontSize: 20,
+                                fontWeight: FontWeight.w700,
+                              ),
+                              stepGranularity: 1,
+                              maxFontSize: 31,
+                              maxLines: 2,
+                            ),
+                            TextField(
+                              keyboardType: TextInputType.number,
+                              decoration: InputDecoration(
+                                  prefixIcon: Icon(Icons.book_outlined),
+                                  hintText: 'Nhập vào đây'
+                              ),
+                            ),
+                            SizedBox(height: 20,),
+                            AutoSizeText(
+                              "Chọn tỉnh, thành phố",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontFamily: "Montserrat",
+                                fontSize: 20,
+                                fontWeight: FontWeight.w700,
+                              ),
+                              stepGranularity: 1,
+                              maxFontSize: 31,
+                              maxLines: 2,
+                            ),
+                            new DropdownButton<String>(
+                              hint: Text('Chọn'),
+                              value: dropdownValue,
+                              icon: const Icon(Icons.arrow_drop_down,),
+                              iconSize: 24,
+                              elevation: 16,
+                              style: const TextStyle(
+                                color: Colors.black,
+                                fontFamily: "Montserrat",
+                                fontSize: 18,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              underline: Container(
+                                height: 1,
+                                color: Colors.black38,
+                              ),
+                              items: items.map((String items) {
+                                return DropdownMenuItem(
+                                    value: items,
+                                    child: Text(items)
+                                );
+                              }).toList(),
+                              onChanged: (String newValue) {
+                                setState(() {
+                                  dropdownValue = newValue;
+                                });
+                              },
+                            ),
+                            SizedBox(height: 20,),
+                            AutoSizeText(
+                              "Chọn quận, huyện",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontFamily: "Montserrat",
+                                fontSize: 20,
+                                fontWeight: FontWeight.w700,
+                              ),
+                              stepGranularity: 1,
+                              maxFontSize: 31,
+                              maxLines: 2,
+                            ),
+                            new DropdownButton<String>(
+                              hint: Text('Chọn'),
+                              value: dropdownValue2,
+                              icon: const Icon(Icons.arrow_drop_down,),
+                              iconSize: 24,
+                              elevation: 16,
+                              style: const TextStyle(
+                                color: Colors.black,
+                                fontFamily: "Montserrat",
+                                fontSize: 18,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              underline: Container(
+                                height: 1,
+                                color: Colors.black38,
+                              ),
+                              items: items2.map((String items) {
+                                return DropdownMenuItem(
+                                    value: items,
+                                    child: Text(items)
+                                );
+                              }).toList(),
+                              onChanged: (String newValue) {
+                                setState(() {
+                                  dropdownValue2 = newValue;
+                                });
+                              },
+                            ),
+                            SizedBox(height: 20,),
+                            AutoSizeText(
+                              "Chọn xã, phường",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontFamily: "Montserrat",
+                                fontSize: 20,
+                                fontWeight: FontWeight.w700,
+                              ),
+                              stepGranularity: 1,
+                              maxFontSize: 31,
+                              maxLines: 2,
+                            ),
+                            new DropdownButton<String>(
+                              hint: Text('Chọn'),
+                              value: dropdownValue3,
+                              icon: const Icon(Icons.arrow_drop_down,),
+                              iconSize: 24,
+                              elevation: 16,
+                              style: const TextStyle(
+                                color: Colors.black,
+                                fontFamily: "Montserrat",
+                                fontSize: 18,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              underline: Container(
+                                height: 1,
+                                color: Colors.black38,
+                              ),
+                              items: items3.map((String items) {
+                                return DropdownMenuItem(
+                                    value: items,
+                                    child: Text(items)
+                                );
+                              }).toList(),
+                              onChanged: (String newValue) {
+                                setState(() {
+                                  dropdownValue3 = newValue;
+                                });
+                              },
+                            ),
+                            SizedBox(height: 20,),
+                            AutoSizeText(
+                              "Số nhà, phố, tổ dân phố/thôn/đội",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontFamily: "Montserrat",
+                                fontSize: 20,
+                                fontWeight: FontWeight.w700,
+                              ),
+                              stepGranularity: 1,
+                              maxFontSize: 31,
+                              maxLines: 2,
+                            ),
+                            TextField(
+                              // autofocus: true,
+                            ),
+                            IconButton(
+                              icon: Icon(Icons.map),
+                              alignment: Alignment.topLeft ,
+                              color: Colors.blue,
+                              iconSize: 30,
+                              onPressed: (){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => googleMapScreen()),
+                                );
+                              },
+                            ),
+                            AutoSizeText(
+                              "Số điện thoại",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontFamily: "Montserrat",
+                                fontSize: 20,
+                                fontWeight: FontWeight.w700,
+                              ),
+                              stepGranularity: 1,
+                              maxFontSize: 31,
+                              maxLines: 2,
+                            ),
+                            TextField(
+                              // autofocus: true,
+                              keyboardType: TextInputType.number,
+                              decoration: InputDecoration(
+                                  prefixIcon: Icon(Icons.phone_android),
+                                  hintText: 'Nhập số điện thoại'
+                              ),
+                            ),
+                            SizedBox(height: 20,),
+                            AutoSizeText(
+                              "Email",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontFamily: "Montserrat",
+                                fontSize: 20,
+                                fontWeight: FontWeight.w700,
+                              ),
+                              stepGranularity: 1,
+                              maxFontSize: 31,
+                              maxLines: 2,
+                            ),
+                            TextField(
+                              // autofocus: true,
+                              keyboardType: TextInputType.emailAddress,
+                              decoration: InputDecoration(
+                                  prefixIcon: Icon(Icons.mail),
+                                  hintText: 'Nhập vào email'
+                              ),
+                            ),
+                            SizedBox(height: 20,),
                           ],
                         ),
-                        SizedBox(height: 20,),
-                        AutoSizeText(
-                          "Nhập quốc tịch",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: "Montserrat",
-                            fontSize: 20,
-                            fontWeight: FontWeight.w700,
-                          ),
-                          stepGranularity: 1,
-                          maxFontSize: 31,
-                          maxLines: 2,
-                        ),
-                        TextField(
-                          textCapitalization: TextCapitalization.words,
-                          decoration: InputDecoration(
-                              prefixIcon: Icon(Icons.flag),
-                              hintText: 'Nhập vào quốc tịch'
-                          ),
-                        ),
-                        SizedBox(height: 20,),
-                        AutoSizeText(
-                          "Chọn tỉnh, thành phố",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: "Montserrat",
-                            fontSize: 20,
-                            fontWeight: FontWeight.w700,
-                          ),
-                          stepGranularity: 1,
-                          maxFontSize: 31,
-                          maxLines: 2,
-                        ),
-                        new DropdownButton<String>(
-                          hint: Text('Chọn'),
-                          value: dropdownValue,
-                          icon: const Icon(Icons.arrow_drop_down,),
-                          iconSize: 24,
-                          elevation: 16,
-                          style: const TextStyle(
-                            color: Colors.black,
-                            fontFamily: "Montserrat",
-                            fontSize: 18,
-                            fontWeight: FontWeight.normal,
-                          ),
-                          underline: Container(
-                            height: 1,
-                            color: Colors.black38,
-                          ),
-                          items: items.map((String items) {
-                            return DropdownMenuItem(
-                              value: items,
-                              child: Text(items)
-                            );
-                          }).toList(),
-                          onChanged: (String newValue) {
-                            setState(() {
-                              dropdownValue = newValue;
-                            });
-                          },
-                        ),
-                        SizedBox(height: 20,),
-                        AutoSizeText(
-                          "Chọn quận, huyện",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: "Montserrat",
-                            fontSize: 20,
-                            fontWeight: FontWeight.w700,
-                          ),
-                          stepGranularity: 1,
-                          maxFontSize: 31,
-                          maxLines: 2,
-                        ),
-                        new DropdownButton<String>(
-                          hint: Text('Chọn'),
-                          value: dropdownValue2,
-                          icon: const Icon(Icons.arrow_drop_down,),
-                          iconSize: 24,
-                          elevation: 16,
-                          style: const TextStyle(
-                            color: Colors.black,
-                            fontFamily: "Montserrat",
-                            fontSize: 18,
-                            fontWeight: FontWeight.normal,
-                          ),
-                          underline: Container(
-                            height: 1,
-                            color: Colors.black38,
-                          ),
-                          items: items2.map((String items) {
-                            return DropdownMenuItem(
-                                value: items,
-                                child: Text(items)
-                            );
-                          }).toList(),
-                          onChanged: (String newValue) {
-                            setState(() {
-                              dropdownValue2 = newValue;
-                            });
-                          },
-                        ),
-                        SizedBox(height: 20,),
-                        AutoSizeText(
-                          "Chọn xã, phường",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: "Montserrat",
-                            fontSize: 20,
-                            fontWeight: FontWeight.w700,
-                          ),
-                          stepGranularity: 1,
-                          maxFontSize: 31,
-                          maxLines: 2,
-                        ),
-                        new DropdownButton<String>(
-                          hint: Text('Chọn'),
-                          value: dropdownValue3,
-                          icon: const Icon(Icons.arrow_drop_down,),
-                          iconSize: 24,
-                          elevation: 16,
-                          style: const TextStyle(
-                            color: Colors.black,
-                            fontFamily: "Montserrat",
-                            fontSize: 18,
-                            fontWeight: FontWeight.normal,
-                          ),
-                          underline: Container(
-                            height: 1,
-                            color: Colors.black38,
-                          ),
-                          items: items3.map((String items) {
-                            return DropdownMenuItem(
-                                value: items,
-                                child: Text(items)
-                            );
-                          }).toList(),
-                          onChanged: (String newValue) {
-                            setState(() {
-                              dropdownValue3 = newValue;
-                            });
-                          },
-                        ),
-                        SizedBox(height: 20,),
-                        IconButton(
-                          icon: Icon(Icons.map),
-                          alignment: Alignment.topLeft ,
-                          color: Colors.blue,
-                          iconSize: 30,
-                          onPressed: (){
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => googleMapScreen()),
-                            );
-                          },
-                        ),
-                      ]
-                  )
+                      // ]
+                  // )
           ),
         )
     );
