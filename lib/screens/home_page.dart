@@ -1,6 +1,4 @@
 import 'package:MyCovid19/models/chat_bot.dart';
-import 'package:MyCovid19/screens/credits_page.dart';
-
 import '../widgets/home_page_widgets/home_categories.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -11,14 +9,12 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       //resizeToAvoidBottomPadding: false,
       appBar: AppBar(
-        //TODO: Add a drawer window
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
