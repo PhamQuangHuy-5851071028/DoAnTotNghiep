@@ -57,20 +57,29 @@ class HomeCategories extends StatelessWidget {
     {
       "imgBottom": -4.0,
       "imgLeft": 8.0,
-      "imgPath": "assets/updates/updates.png",
-      "tabName": "Thông tin hằng ngày",
-      "imgHeight": 146.0,
-      "tabDesc": "Xem tin tức mới nhất liên quan đến vi rút",
-      "color": Colors.greenAccent[700],
-    },
-    {
-      "imgBottom": -4.0,
-      "imgLeft": 8.0,
       "imgPath": "assets/document.png",
       "tabName": "Khai báo y tế",
       "imgHeight": 130.0,
       "tabDesc": "Khai báo y tế cá nhân",
       "color": Colors.blueAccent[700],
+    },
+    {
+      "imgBottom": -4.0,
+      "imgLeft": 8.0,
+      "imgPath": "assets/mapcovid.png",
+      "tabName": "Bản đồ Covid-19",
+      "imgHeight": 130.0,
+      "tabDesc": "Bản đồ Covid-19 tại địa phương",
+      "color": Colors.lime[700],
+    },
+    {
+      "imgBottom": -4.0,
+      "imgLeft": 8.0,
+      "imgPath": "assets/updates/updates.png",
+      "tabName": "Thông tin hằng ngày",
+      "imgHeight": 146.0,
+      "tabDesc": "Xem tin tức mới nhất liên quan đến vi rút",
+      "color": Colors.greenAccent[700],
     },
   ];
 

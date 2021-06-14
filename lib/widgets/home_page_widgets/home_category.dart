@@ -1,3 +1,5 @@
+import 'package:MyCovid19/widgets/health_declaration/health_declaration_web.dart';
+import 'package:MyCovid19/widgets/health_declaration/map_covid.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
 import '../../screens/myths_page.dart';
@@ -52,9 +54,15 @@ class CategoryTab extends StatelessWidget {
       case ("Thống kê"):
         return () => Navigator.of(context)
             .push(MaterialPageRoute(builder: (context) => WorldStatScreen()));
+      // case ("Khai báo y tế"):
+      //   return () => Navigator.of(context).push(
+      //       MaterialPageRoute(builder: (context) => healthDeclarationScreen()));
       case ("Khai báo y tế"):
         return () => Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => healthDeclarationScreen()));
+            MaterialPageRoute(builder: (context) => healthDeclarationWebScreen()));
+      case ("Bản đồ Covid-19"):
+        return () => Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => mapCovidScreen()));
     }
     return () {};
   }
