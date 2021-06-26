@@ -2,20 +2,6 @@ import 'package:MyCovid19/screens/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dialogflow/dialogflow_v2.dart';
 
-
-class ChatBotScreens extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return new MaterialApp(
-      theme: new ThemeData(
-        primarySwatch: Colors.lightBlue,
-      ),
-      debugShowCheckedModeBanner: false,
-      home: new HomePageDialogflow(),
-    );
-  }
-}
-
 class HomePageDialogflow extends StatefulWidget {
   HomePageDialogflow({Key key, this.title}) : super(key: key);
 
@@ -41,7 +27,7 @@ class _HomePageDialogflow extends State<HomePageDialogflow> {
                 controller: _textController,
                 onSubmitted: _handleSubmitted,
                 decoration:
-                new InputDecoration.collapsed(hintText: "Send a message"),
+                new InputDecoration.collapsed(hintText: "Nhập tin nhắn"),
               ),
             ),
             new Container(
@@ -79,7 +65,7 @@ class _HomePageDialogflow extends State<HomePageDialogflow> {
     _textController.clear();
     ChatMessage message = new ChatMessage(
       text: text,
-      name: "You",
+      name: "Tôi",
       type: true,
     );
     setState(() {
@@ -92,6 +78,7 @@ class _HomePageDialogflow extends State<HomePageDialogflow> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
+        automaticallyImplyLeading: false,
         leading: IconButton(
             onPressed: () {
               Navigator.push(

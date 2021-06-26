@@ -50,6 +50,11 @@ class VirusDetailsScreen extends StatelessWidget {
           "thuốc để điều trị những người bị nhiễm bệnh, nhưng khoa học không thể kết luận được liệu chúng " +
           "có hiệu quả.",
     },
+    {
+      "detail": "Có 2 biến thể mới của Covid-19 là biến thể nào?",
+      "desc": "Biến thể Anh chủng B.1.1.7 xuất hiện tại Anh vào tháng 12-2020 được cho là có khả năng lây lan nhanh hơn so với các chủng SARS-CoV-2 trước đây. Đây là biến chủng đang gây nên sự bùng phát mạnh của đại dịch COVID-19 ở Anh cũng như các nước châu Âu. Chủng B.1.1.7 có khả năng lây nhiễm lớn, tải lượng virus tăng gấp bốn lần so với chủng trước đây. Thời gian đào thải mầm bệnh ra ngoài cũng rất cao và rất ngắn, tỷ lệ lây nhiễm tăng 70% so với chủng cũ."
+          +   "\n \nCòn biến thể phát hiện ở Nam Phi - B.1.351 - có tốc độ lây nhiễm nhanh hơn 20-200% so với chủng ban đầu, là chủng có tốc độ lây lan mạnh nhất hiện nay. Biến thể này có một số điểm tương đồng với biến thể lần đầu tiên được xác định ở Anh và dường như cũng dễ lây lan hơn, nhưng không có bằng chứng cho thấy gây chết người nhiều hơn.",
+    },
   ];
 
   static AutoSizeGroup titleGrp = AutoSizeGroup();

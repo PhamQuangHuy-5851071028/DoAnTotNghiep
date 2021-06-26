@@ -23,54 +23,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec350769-28de-4ec4-b0c1-fa505a027e7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/widgets/health_declaration/health_declaration_web.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/health_declaration/map_covid.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/04a989d472b6471f75f05ed128dc6528/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/04a989d472b6471f75f05ed128dc6528/.filecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/04a989d472b6471f75f05ed128dc6528/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/04a989d472b6471f75f05ed128dc6528/app.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/04a989d472b6471f75f05ed128dc6528/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/04a989d472b6471f75f05ed128dc6528/debug_android_application.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/04a989d472b6471f75f05ed128dc6528/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/04a989d472b6471f75f05ed128dc6528/flutter_assets.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/version" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/version" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/stats_widgets/timeline_covid.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/external_libs_dex/debug/mergeExtDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/external_libs_dex/debug/mergeExtDexDebug/out/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/.last_build_id" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/.last_build_id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/AssetManifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/NOTICES" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/NOTICES" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/fonts/MaterialIcons-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/fonts/MaterialIcons-Regular.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/isolate_snapshot_data" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/isolate_snapshot_data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/stats/global_stats.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/stats/global_stats.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/assets/stats/global_stats.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/assets/stats/global_stats.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/vm_snapshot_data" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/vm_snapshot_data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeNativeLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeNativeLibs/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/AssetManifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/NOTICES" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/NOTICES" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/fonts/MaterialIcons-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/fonts/MaterialIcons-Regular.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/isolate_snapshot_data" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/isolate_snapshot_data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/assets/stats/global_stats.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/assets/stats/global_stats.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/vm_snapshot_data" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/vm_snapshot_data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_native_libs/debug/out/lib/x86/libflutter.so" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_native_libs/debug/out/lib/x86/libflutter.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_native_libs/debug/out/lib/x86_64/libflutter.so" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_native_libs/debug/out/lib/x86_64/libflutter.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/stripped_native_libs/debug/out/lib/x86/libflutter.so" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/stripped_native_libs/debug/out/lib/x86/libflutter.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/stripped_native_libs/debug/out/lib/x86_64/libflutter.so" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/stripped_native_libs/debug/out/lib/x86_64/libflutter.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/models/chat_bot.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/chat_bot.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/home_page_widgets/home_categories.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/home_page_widgets/home_categories.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/home_page_widgets/home_category.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/home_page_widgets/home_category.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/googlemap.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/googlemap.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/virus_details_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/virus_details_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/health_declaration/health_declaration_web.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/health_declaration/health_declaration_web.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/health_declaration/map_covid.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/health_declaration/map_covid.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/stats_widgets/affected_map_container.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/stats_widgets/affected_map_container.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/stats_widgets/world_stats_image.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/stats_widgets/world_stats_image.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,19 +86,20 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../FoodOrder/fooddriver_android-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../NCKH20_21/code_app/quanlydoanvien" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DoAnTotNghiep\DoAnTotNghiep\assets\stats" />
       <recent name="D:\DoAnTotNghiep\DoAnTotNghiep\android\app" />
       <recent name="D:\DoAnTotNghiep\DoAnTotNghiep\assets" />
       <recent name="D:\ThucTapTotNghiep\DoAnThucTapTotNghiep\assets\myths" />
       <recent name="D:\ThucTapTotNghiep\covid_tracker\assets" />
-      <recent name="D:\FlutterApp\covid_tracker-master\assets\launcher" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DoAnTotNghiep\DoAnTotNghiep\assets\stats" />
       <recent name="D:\DoAnTotNghiep\DoAnTotNghiep\lib\screens" />
       <recent name="D:\DoAnTotNghiep\DoAnTotNghiep\lib\screens\stats_dashboard_screens" />
     </key>
@@ -191,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622861291284</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="big update 5">
+      <created>1623651702440</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1623651702440</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -226,13 +212,18 @@
     <MESSAGE value="big update 2" />
     <MESSAGE value="big update 3" />
     <MESSAGE value="big update 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="big update 4" />
+    <MESSAGE value="big update 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="big update 5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="515" y="113" key="#Images" timestamp="1618296639040">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="515" y="113" key="#Images/0.0.1536.834@0.0.1536.834" timestamp="1618296639040" />
+    <state x="361" y="75" key="#Intentions" timestamp="1624712601620">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="75" key="#Intentions/0.0.1536.834@0.0.1536.834" timestamp="1624712601620" />
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621569552991">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -245,30 +236,30 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="349" y="172" key="AndroidCreateResourceFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1622434201271" />
-    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1622861201560">
+    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1623651635501">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1622861201560" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1623228714547">
+    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1623651635501" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1624712365410">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1623228714547" />
-    <state width="1537" height="210" key="GridCell.Tab.0.bottom" timestamp="1623649481490">
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1624712365410" />
+    <state width="1491" height="199" key="GridCell.Tab.0.bottom" timestamp="1624713867443">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="210" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1623649481490" />
-    <state width="1537" height="210" key="GridCell.Tab.0.center" timestamp="1623649481489">
+    <state width="1491" height="199" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1624713867443" />
+    <state width="1491" height="199" key="GridCell.Tab.0.center" timestamp="1624713867443">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="210" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1623649481489" />
-    <state width="1537" height="210" key="GridCell.Tab.0.left" timestamp="1623649481489">
+    <state width="1491" height="199" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1624713867443" />
+    <state width="1491" height="199" key="GridCell.Tab.0.left" timestamp="1624713867443">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="210" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1623649481489" />
-    <state width="1537" height="210" key="GridCell.Tab.0.right" timestamp="1623649481489">
+    <state width="1491" height="199" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1624713867443" />
+    <state width="1491" height="199" key="GridCell.Tab.0.right" timestamp="1624713867443">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="210" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1623649481489" />
+    <state width="1491" height="199" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1624713867443" />
     <state x="277" y="62" key="SettingsEditor" timestamp="1616338737279">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -277,16 +268,5 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="70" width="672" height="676" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1618919074472" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/widgets/health_declaration/health_declaration_web.dart</url>
-          <line>28</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

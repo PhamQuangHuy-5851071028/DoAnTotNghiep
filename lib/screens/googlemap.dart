@@ -19,7 +19,7 @@ class _googleMapState extends State<googleMapScreen> {
     _location.onLocationChanged.listen((l) {
       _controller.animateCamera(
         CameraUpdate.newCameraPosition(
-          CameraPosition(target: LatLng(l.latitude, l.longitude),zoom: 17),
+          CameraPosition(target: LatLng(l.latitude, l.longitude),zoom: 17.2),
         ),
       );
     });
@@ -31,32 +31,14 @@ class _googleMapState extends State<googleMapScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        leading: IconButton(
-            onPressed: () => Navigator.of(context).pop(),
-            icon: Icon(
-              Icons.arrow_back,
-              color: Colors.black,
-            )),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      ),
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        child: Stack(
-          children: [
-            IconButton(
-                icon: Icon(Icons.arrow_back),
-                onPressed: (){},
-            ),
-            GoogleMap(
-              initialCameraPosition: CameraPosition(target: _initialcameraposition),
-              mapType: MapType.normal,
-              onMapCreated: _onMapCreated,
-              myLocationEnabled: true,
-            ),
-          ],
+        child: GoogleMap(
+          initialCameraPosition: CameraPosition(target: _initialcameraposition),
+          mapType: MapType.normal,
+          onMapCreated: _onMapCreated,
+          myLocationEnabled: true,
         ),
       ),
     );

@@ -31,7 +31,7 @@ class _mapCovidState extends State<mapCovidScreen> {
         body: WillPopScope(
           onWillPop: ()async{
             String url = await controller.currentUrl();
-            if(url=="https://hatangdothi.tphcm.gov.vn/covid19/mobile/"){
+            if(url=="https://www.bing.com/covid/local/vietnam?vert=graph"){
               return true;
             }else{
               controller.goBack();
@@ -42,7 +42,7 @@ class _mapCovidState extends State<mapCovidScreen> {
             body: Container(
               child: SafeArea(
                 child: WebView(
-                  initialUrl: "https://hatangdothi.tphcm.gov.vn/covid19/mobile/",
+                  initialUrl: "https://www.bing.com/covid/local/vietnam?vert=graph",
                   javascriptMode: JavascriptMode.unrestricted,
                   onWebViewCreated: (WebViewController wc){
                     controller = wc;

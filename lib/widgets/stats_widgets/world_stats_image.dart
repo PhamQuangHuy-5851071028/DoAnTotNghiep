@@ -12,7 +12,7 @@ class WorldStatsImage extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         child: Container(
           decoration: BoxDecoration(
-              color: Colors.purple[900],
+              color: Colors.white,
               borderRadius: BorderRadius.circular(16)),
           padding: const EdgeInsets.fromLTRB(12, 20, 12, 20),
           child: Container(

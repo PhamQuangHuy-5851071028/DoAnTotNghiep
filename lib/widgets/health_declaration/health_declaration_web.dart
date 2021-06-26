@@ -13,60 +13,68 @@ class _healthDeclarationWebState extends State<healthDeclarationWebScreen> {
   WebViewController controller;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: Colors.white,
-        extendBodyBehindAppBar: true,
-        appBar: AppBar(
-          leading: IconButton(
-              onPressed: () => Navigator.of(context).pop(),
-              icon: Icon(
-                Icons.arrow_back,
-                color: Colors.black,
-              )),
-          actions: [
-            IconButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => googleMapScreen()),
-                  );
-                },
-                icon: Icon(Icons.location_on, color: Colors.blue,
-                )
-            ),
-          ],
-          centerTitle: true,
-          title: Text("Khai báo y tế",
-              style: TextStyle(color: Colors.black, fontSize: 24)),
-          backgroundColor: Colors.white,
-          elevation: 0,
-        ),
-        body: WillPopScope(
-          onWillPop: ()async{
-            String url = await controller.currentUrl();
-            if(url=="https://tokhaiyte.vn/"){
-              return true;
-            }else{
-              controller.goBack();
-              return false;
-            }
-          },
-          child: Scaffold(
-            body: Container(
-              child: SafeArea(
-                child: WebView(
-                  initialUrl: "https://tokhaiyte.vn/",
-                  javascriptMode: JavascriptMode.unrestricted,
-                  onWebViewCreated: (WebViewController wc){
-                    controller = wc;
-                  },
-                ),
-              ),
-            ),
-          ),
-        )
+    AppBar appBar = AppBar(
+      automaticallyImplyLeading: false,
+      leading: IconButton(
+          onPressed: () => Navigator.of(context).pop(),
+          icon: Icon(
+            Icons.arrow_back,
+            color: Colors.black,
+          )
+      ),
+      centerTitle: true,
+      title: Text("Khai báo y tế",
+          style: TextStyle(color: Colors.black, fontSize: 24)),
+      backgroundColor: Colors.white,
+      elevation: 0,
     );
+    return  MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+          backgroundColor: Colors.white,
+          extendBodyBehindAppBar: true,
+          appBar: appBar,
+          body: Padding(
+            padding: const EdgeInsets.only(top: 57),
+            child: Column(
+              children: [
+                Expanded(
+                    child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(13),
+                        ),
+                        padding: const EdgeInsets.all(5),
+                        child: googleMapScreen()
+                    ),
+
+                ),
+                Expanded(
+                  flex: 3,
+                  child: WillPopScope(
+                  onWillPop: ()async{
+                    String url = await controller.currentUrl();
+                    if(url=="https://tokhaiyte.vn/"){
+                      return true;
+                    }else{
+                      controller.goBack();
+                      return false;
+                    }
+                  },
+                  child: WebView(
+                          initialUrl: "https://tokhaiyte.vn/",
+                          javascriptMode: JavascriptMode.unrestricted,
+                          onWebViewCreated: (WebViewController wc){
+                            controller = wc;
+                            },
+                          ),
+                        ),
+                      ),
+              ],
+            ),
+          )
+        )
+      );
   }
 }
 
