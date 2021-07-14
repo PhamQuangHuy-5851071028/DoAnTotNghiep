@@ -44,62 +44,62 @@ class SmallGraphPanel extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               //Column of case label and case number
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  //Row of case label and icon
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      //Case Type Name
-                      LimitedBox(
-                        maxHeight: constraint.maxHeight*0.26,
-                        maxWidth: MediaQuery.of(context).size.width>340?constraint.maxWidth * 0.8:constraint.maxWidth*0.5,
-                        child: AutoSizeText(
-                          label,
-                          style: TextStyle(
-                            fontSize: 13,
-                            fontFamily: "Montserrat",
-                            color: fontColor,
-                            letterSpacing: 0.3,
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    //Row of case label and icon
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        //Case Type Name
+                        LimitedBox(
+                          maxHeight: constraint.maxHeight*0.26,
+                          maxWidth: MediaQuery.of(context).size.width>340?constraint.maxWidth * 0.8:constraint.maxWidth*0.5,
+                          child: AutoSizeText(
+                            label,
+                            style: TextStyle(
+                              fontSize: 13,
+                              fontFamily: "Montserrat",
+                              color: fontColor,
+                              letterSpacing: 0.3,
+                            ),
+                            maxFontSize: 13,
+                            maxLines: 1,
+                            minFontSize: 9,
+                            group: titleGrp,
                           ),
-                          maxFontSize: 13,
-                          maxLines: 1,
-                          minFontSize: 9,
-                          group: titleGrp,
                         ),
-                      ),
 
-                      //Arrow Icon
-                      Icon(
-                        icon,
-                        size: 21,
-                        color: iconColor,
-                      )
-                    ],
-                  ),
-
-                  //Cases Number
-                  LimitedBox(
-                    maxHeight: constraint.maxHeight * 0.3,
-                    child: AutoSizeText(
-                      (value / 1000).toStringAsPrecision(5) + "k",
-                      style: TextStyle(
-                        color: fontColor,
-                        fontFamily: "Montserrat",
-                        letterSpacing: 0.3,
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      maxFontSize: 15,
-                      maxLines: 1,
-                      group: numGrp,
-                      minFontSize: 9,
+                        //Arrow Icon
+                        Icon(
+                          icon,
+                          size: 21,
+                          color: iconColor,
+                        )
+                      ],
                     ),
-                  )
-                ],
+
+                    //Cases Number
+                    LimitedBox(
+                      maxHeight: constraint.maxHeight * 0.3,
+                      child: AutoSizeText(
+                        (value / 1000).toStringAsPrecision(5) + "k",
+                        style: TextStyle(
+                          color: fontColor,
+                          fontFamily: "Montserrat",
+                          letterSpacing: 0.3,
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        maxFontSize: 15,
+                        maxLines: 1,
+                        group: numGrp,
+                        minFontSize: 9,
+                      ),
+                    )
+                  ],
               ),
 
               //Curve line

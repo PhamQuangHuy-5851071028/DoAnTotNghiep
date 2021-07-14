@@ -98,14 +98,14 @@ class _CountryStatWidgetState extends State<CountryStatWidget>
                           widget.onBackArrow();
                         },
                         child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.transparent,
-                            borderRadius: BorderRadius.circular(5),
-                            border: Border.all(
-                              color: Color(0x99FFFFFF),
-                              width: 1.8,
-                            ),
-                          ),
+                          // decoration: BoxDecoration(
+                          //   color: Colors.transparent,
+                          //   borderRadius: BorderRadius.circular(5),
+                          //   border: Border.all(
+                          //     color: Color(0x99FFFFFF),
+                          //     width: 1.8,
+                          //   ),
+                          // ),
                           margin: const EdgeInsets.only(left: 20),
                           padding: const EdgeInsets.all(7),
                           child: const Icon(

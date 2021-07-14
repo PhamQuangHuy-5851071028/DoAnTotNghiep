@@ -342,13 +342,15 @@ class _CountryListLoaderState extends State<CountryListLoader> with SingleTicker
                           SizedBox(
                             height: 16,
                           ),
-                          Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(8),
-                              color: Colors.grey,
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                color: Colors.grey,
+                              ),
+                              width: 43,
+                              height: 27,
                             ),
-                            width: 43,
-                            height: 27,
                           ),
                           SizedBox(
                             height: 10,

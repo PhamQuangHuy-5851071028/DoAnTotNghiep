@@ -66,13 +66,13 @@ class _WorldStatScreenState extends State<WorldStatScreen> {
         textSize: 18,
         color: Colors.red,
       ),
-      BarItem(
-        icon: Icons.info_outline,
-        iconSize: 24,
-        text: "Thông tin",
-        textSize: 18,
-        color: Color(0xff009a88),
-      ),
+      // BarItem(
+      //   icon: Icons.info_outline,
+      //   iconSize: 24,
+      //   text: "Thông tin",
+      //   textSize: 18,
+      //   color: Color(0xff009a88),
+      // ),
     ];
   }
 
@@ -99,7 +99,7 @@ class _WorldStatScreenState extends State<WorldStatScreen> {
           builder:(context,snapshot) {
             if(snapshot.hasData){
               return PageView.builder(
-                itemCount: 4,
+                itemCount: 3,
                 physics: BouncingScrollPhysics(),
                 onPageChanged: (index) {
                   selectedBottomBarIndex = index;

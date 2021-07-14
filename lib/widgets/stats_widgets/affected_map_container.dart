@@ -1,5 +1,6 @@
 import 'package:MyCovid19/widgets/stats_widgets/timeline_covid.dart';
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AffectedAreasContainer extends StatelessWidget {
@@ -35,14 +36,25 @@ class AffectedAreasContainer extends StatelessWidget {
                     ),
                     maxFontSize: 17,
                   ),
-
-                  //More horiz icon
+                  // More horiz icon
                   IconButton(
-                    icon: const Icon(
-                      Icons.more_horiz,
-                      color: Color(0xFF7B1FA2),
-                      size: 28,
+                    icon: AutoSizeText(
+                      "Xem thêm",
+                      style: TextStyle(
+                        color: Colors.red,
+                        fontFamily: "Montserrat",
+                        fontSize: 17,
+                        fontWeight: FontWeight.w700,
+                      ),
+                      maxFontSize: 17,
+                      maxLines: 2,
+                      textAlign: TextAlign.center,
                     ),
+                    // icon: const Icon(
+                    //   Icons.more_horiz,
+                    //   color: Colors.red,
+                    //   size: 35,
+                    // ),
                     onPressed: () {
                       Navigator.push(
                         context,

@@ -1,6 +1,7 @@
 import 'package:MyCovid19/screens/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dialogflow/dialogflow_v2.dart';
+import 'package:flutter/services.dart';
 
 class HomePageDialogflow extends StatefulWidget {
   HomePageDialogflow({Key key, this.title}) : super(key: key);
@@ -76,15 +77,17 @@ class _HomePageDialogflow extends State<HomePageDialogflow> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
     return new Scaffold(
+      resizeToAvoidBottomInset : false,
       appBar: new AppBar(
         automaticallyImplyLeading: false,
         leading: IconButton(
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => HomeScreen()),
-              );
+              Navigator.pop(context);
             },
             icon: Icon(
               Icons.arrow_back,
@@ -120,6 +123,10 @@ class ChatMessage extends StatelessWidget {
   final bool type;
 
   List<Widget> otherMessage(context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
     return <Widget>[
       new Container(
         margin: const EdgeInsets.only(right: 16.0),
@@ -142,6 +149,10 @@ class ChatMessage extends StatelessWidget {
   }
 
   List<Widget> myMessage(context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
     return <Widget>[
       new Expanded(
         child: new Column(
@@ -169,6 +180,10 @@ class ChatMessage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
     return new Container(
       margin: const EdgeInsets.symmetric(vertical: 10.0),
       child: new Row(

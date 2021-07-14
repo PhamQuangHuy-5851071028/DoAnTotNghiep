@@ -10,10 +10,6 @@ async
 2.12
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/async-2.6.1/
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/async-2.6.1/lib/
-audioplayers
-2.0
-file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/audioplayers-0.13.7/
-file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/audioplayers-0.13.7/lib/
 auto_size_text
 2.0
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/auto_size_text-2.1.0/
@@ -108,8 +104,8 @@ file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/freezed_a
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/freezed_annotation-0.11.0+1/lib/
 google_maps_flutter
 2.1
-file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/google_maps_flutter-0.5.33/
-file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/google_maps_flutter-0.5.33/lib/
+file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/google_maps_flutter-1.2.0/
+file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/google_maps_flutter-1.2.0/lib/
 google_maps_flutter_platform_interface
 2.3
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/google_maps_flutter_platform_interface-1.2.0/
@@ -166,6 +162,10 @@ octo_image
 2.7
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/octo_image-0.3.0/
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/octo_image-0.3.0/lib/
+onesignal_flutter
+2.12
+file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/onesignal_flutter-3.0.0/
+file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/onesignal_flutter-3.0.0/lib/
 path
 2.12
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/path-1.8.0/
@@ -254,10 +254,6 @@ source_span
 2.12
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/source_span-1.8.1/
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/source_span-1.8.1/lib/
-speech_recognition
-2.0
-file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/speech_recognition-0.3.0+1/
-file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/speech_recognition-0.3.0+1/lib/
 sqflite
 2.7
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/sqflite-1.3.1+2/
