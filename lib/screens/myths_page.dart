@@ -21,15 +21,15 @@ class MythsScreen extends StatelessWidget {
       "imgPath": "assets/myths/mosquito.png",
     },
     {
-      "myth": "Vi rút COVID-19 có thể lây truyền ở những vùng có khí hậu nóng ẩm",
-      "desc":
-          "Không có lý do gì để tin rằng thời tiết nóng có thể giết chết loại coronavirus mới" +
-              " hoặc các bệnh khác. Nó có thể được truyền trong bất kỳ khí hậu nào.",
+      "myth":
+          "Vi rút COVID-19 có thể lây truyền ở những vùng có khí hậu nóng ẩm",
+      "desc": "Không có lý do gì để tin rằng thời tiết nóng có thể giết chết loại coronavirus mới" +
+          " hoặc các bệnh khác. Nó có thể được truyền trong bất kỳ khí hậu nào.",
       "imgPath": "assets/myths/hot.png",
     },
     {
       "myth": "Tỏi KHÔNG bảo vệ chống lại sự lây nhiễm từ coronavirus",
-      "desc": "Tỏi có thể có một số đặc tính chống vi khuẩn. "+
+      "desc": "Tỏi có thể có một số đặc tính chống vi khuẩn. " +
           "Tuy nhiên, không có bằng chứng nào cho thấy tỏi" +
           " có thể bảo vệ mọi người chống lại vi rút COVID-19.",
       "imgPath": "assets/myths/garlic.png",
@@ -43,17 +43,17 @@ class MythsScreen extends StatelessWidget {
     {
       "myth": "Các bưu kiện từ Trung Quốc KHÔNG THỂ lây lan coronavirus",
       "desc":
-      "Các nhà khoa học tin rằng virus không thể tồn tại trên các lá thư hoặc gói hàng " +
-          "trong một khoảng thời gian dài. Có rất ít " +
-          "rủi ro lây lan từ các sản phẩm hoặc gói hàng được vận chuyển.",
+          "Các nhà khoa học tin rằng virus không thể tồn tại trên các lá thư hoặc gói hàng " +
+              "trong một khoảng thời gian dài. Có rất ít " +
+              "rủi ro lây lan từ các sản phẩm hoặc gói hàng được vận chuyển.",
       "imgPath": "assets/myths/package.png",
     },
     {
       "myth": "Chó và mèo KHÔNG lây lan coronavirus",
       "desc":
-      "Hiện tại, có rất ít bằng chứng cho thấy SARS-CoV-2 có thể lây nhiễm qua " +
-          "mèo và chó. Các nhà khoa học vẫn đang tranh luận " +
-          "tầm quan trọng của trường hợp này đối với sự bùng phát.",
+          "Hiện tại, có rất ít bằng chứng cho thấy SARS-CoV-2 có thể lây nhiễm qua " +
+              "mèo và chó. Các nhà khoa học vẫn đang tranh luận " +
+              "tầm quan trọng của trường hợp này đối với sự bùng phát.",
       "imgPath": "assets/myths/dogs.png",
     },
     {
@@ -106,7 +106,7 @@ class MythsScreen extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: SizedBox(
-                        width: constraint.maxWidth * 0.55,
+                        width: constraint.maxWidth * 0.5,
                         child: AutoSizeText(
                           "Thông tin sai về Covid-19",
                           style: TextStyle(
@@ -125,7 +125,7 @@ class MythsScreen extends StatelessWidget {
 
                   //Image
                   Positioned.fill(
-                    bottom: -17.0,
+                    right: -27.0,
                     child: Align(
                       alignment: Alignment.bottomRight,
                       child: Container(
@@ -135,7 +135,7 @@ class MythsScreen extends StatelessWidget {
                             tag: imgPath,
                             child: Image(
                               image: AssetImage(imgPath),
-                              height: constraint.maxHeight * 0.93,
+                              height: constraint.maxHeight * 1,
                             ),
                           ),
                         ),
@@ -172,10 +172,11 @@ class MythsScreen extends StatelessWidget {
                               margin: const EdgeInsets.fromLTRB(23, 35, 23, 15),
                               child: LayoutBuilder(
                                 builder: (ctx, constraint) => Column(
-                                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                                  crossAxisAlignment:
+                                      CrossAxisAlignment.stretch,
                                   children: <Widget>[
                                     LimitedBox(
-                                      maxHeight: constraint.maxHeight*0.27,
+                                      maxHeight: constraint.maxHeight * 0.27,
                                       child: Image(
                                         image: AssetImage(
                                             "${myths[index]["imgPath"]}"),
@@ -183,10 +184,10 @@ class MythsScreen extends StatelessWidget {
                                       ),
                                     ),
                                     SizedBox(
-                                      height: constraint.maxHeight*0.11,
+                                      height: constraint.maxHeight * 0.11,
                                     ),
                                     LimitedBox(
-                                      maxHeight: constraint.maxHeight*0.17,
+                                      maxHeight: constraint.maxHeight * 0.17,
                                       child: AutoSizeText(
                                         "${myths[index]["myth"]}",
                                         textAlign: TextAlign.center,
@@ -206,7 +207,7 @@ class MythsScreen extends StatelessWidget {
                                       height: 13,
                                     ),
                                     LimitedBox(
-                                      maxHeight: constraint.maxHeight*0.45,
+                                      maxHeight: constraint.maxHeight * 0.45,
                                       child: AutoSizeText(
                                         "${myths[index]['desc']}",
                                         textAlign: TextAlign.justify,

@@ -1,4 +1,3 @@
-import 'package:MyCovid19/screens/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dialogflow/dialogflow_v2.dart';
 import 'package:flutter/services.dart';
@@ -15,6 +14,7 @@ class HomePageDialogflow extends StatefulWidget {
 class _HomePageDialogflow extends State<HomePageDialogflow> {
   final List<ChatMessage> _messages = <ChatMessage>[];
   final TextEditingController _textController = new TextEditingController();
+  bool _isComposing = false;
 
   Widget _buildTextComposer() {
     return new IconTheme(
@@ -27,15 +27,22 @@ class _HomePageDialogflow extends State<HomePageDialogflow> {
               child: new TextField(
                 controller: _textController,
                 onSubmitted: _handleSubmitted,
+                onChanged: (String text) {
+                  setState(() {
+                    _isComposing = text.length > 0;
+                  });
+                },
                 decoration:
-                new InputDecoration.collapsed(hintText: "Nhập tin nhắn"),
+                    new InputDecoration.collapsed(hintText: "Nhập tin nhắn"),
               ),
             ),
             new Container(
               margin: new EdgeInsets.symmetric(horizontal: 4.0),
               child: new IconButton(
                   icon: new Icon(Icons.send),
-                  onPressed: () => _handleSubmitted(_textController.text)),
+                  onPressed: _isComposing
+                      ? () => _handleSubmitted(_textController.text)
+                      : null),
             ),
           ],
         ),
@@ -46,10 +53,9 @@ class _HomePageDialogflow extends State<HomePageDialogflow> {
   void Response(query) async {
     _textController.clear();
     AuthGoogle authGoogle =
-    await AuthGoogle(fileJson: "assets/credentials.json")
-        .build();
+        await AuthGoogle(fileJson: "assets/credentials.json").build();
     Dialogflow dialogflow =
-    Dialogflow(authGoogle: authGoogle, language: Language.english);
+        Dialogflow(authGoogle: authGoogle, language: Language.english);
     AIResponse response = await dialogflow.detectIntent(query);
     ChatMessage message = new ChatMessage(
       text: response.getMessage() ??
@@ -64,15 +70,20 @@ class _HomePageDialogflow extends State<HomePageDialogflow> {
 
   void _handleSubmitted(String text) {
     _textController.clear();
-    ChatMessage message = new ChatMessage(
-      text: text,
-      name: "Tôi",
-      type: true,
-    );
     setState(() {
-      _messages.insert(0, message);
+      _isComposing = false;
     });
-    Response(text);
+    if (text.length > 0) {
+      ChatMessage message = new ChatMessage(
+        text: text,
+        name: "Tôi",
+        type: true,
+      );
+      setState(() {
+        _messages.insert(0, message);
+      });
+      Response(text);
+    }
   }
 
   @override
@@ -82,7 +93,7 @@ class _HomePageDialogflow extends State<HomePageDialogflow> {
       DeviceOrientation.portraitDown,
     ]);
     return new Scaffold(
-      resizeToAvoidBottomInset : false,
+      resizeToAvoidBottomInset: true,
       appBar: new AppBar(
         automaticallyImplyLeading: false,
         leading: IconButton(
@@ -100,11 +111,11 @@ class _HomePageDialogflow extends State<HomePageDialogflow> {
       body: new Column(children: <Widget>[
         new Expanded(
             child: new ListView.builder(
-              padding: new EdgeInsets.all(8.0),
-              reverse: true,
-              itemBuilder: (_, int index) => _messages[index],
-              itemCount: _messages.length,
-            )),
+          padding: new EdgeInsets.all(8.0),
+          reverse: true,
+          itemBuilder: (_, int index) => _messages[index],
+          itemCount: _messages.length,
+        )),
         new Divider(height: 1.0),
         new Container(
           decoration: new BoxDecoration(color: Theme.of(context).cardColor),
@@ -130,7 +141,8 @@ class ChatMessage extends StatelessWidget {
     return <Widget>[
       new Container(
         margin: const EdgeInsets.only(right: 16.0),
-        child: new CircleAvatar(child: new Image.asset("assets/launcher/launcher.png")),
+        child: new CircleAvatar(
+            child: new Image.asset("assets/launcher/launcher.png")),
       ),
       new Expanded(
         child: new Column(
@@ -171,9 +183,9 @@ class ChatMessage extends StatelessWidget {
         margin: const EdgeInsets.only(left: 16.0),
         child: new CircleAvatar(
             child: new Text(
-              this.name[0],
-              style: new TextStyle(fontWeight: FontWeight.bold),
-            )),
+          this.name[0],
+          style: new TextStyle(fontWeight: FontWeight.bold),
+        )),
       ),
     ];
   }

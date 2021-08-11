@@ -36,45 +36,41 @@ class _healthDeclarationWebState extends State<healthDeclarationWebScreen> {
           appBar: appBar,
           body: Padding(
             padding: const EdgeInsets.only(top: 57),
-            child: Column(
-              children: [
-                Expanded(
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(13),
-                        ),
-                        padding: const EdgeInsets.all(5),
-                        child: googleMapScreen()
-                    ),
-
-                ),
-                Expanded(
-                  flex: 3,
-                  child: WillPopScope(
-                  onWillPop: ()async{
-                    String url = await controller.currentUrl();
-                    if(url=="https://tokhaiyte.vn/"){
-                      return true;
-                    }else{
-                      controller.goBack();
-                      return false;
-                    }
-                  },
-                  child: WebView(
+            child: Stack(
+              children: <Widget>[
+                WillPopScope(
+                        onWillPop: ()async{
+                          String url = await controller.currentUrl();
+                          if(url=="https://tokhaiyte.vn/"){
+                            return true;
+                          }else{
+                            controller.goBack();
+                            return false;
+                          }
+                        },
+                        child: WebView(
                           initialUrl: "https://tokhaiyte.vn/",
                           javascriptMode: JavascriptMode.unrestricted,
                           onWebViewCreated: (WebViewController wc){
                             controller = wc;
-                            },
-                          ),
+                          },
                         ),
                       ),
-              ],
+                Container(
+                    height:  MediaQuery.of(context).size.height/4,
+                    width: MediaQuery.of(context).size.width,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(13),
+                    ),
+                    padding: const EdgeInsets.all(5),
+                    child: googleMapScreen()
+                ),
+                  ],
+                ),
             ),
           )
-        )
-      );
+        );
   }
 }
 

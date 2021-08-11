@@ -102,6 +102,10 @@ freezed_annotation
 2.7
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/freezed_annotation-0.11.0+1/
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/freezed_annotation-0.11.0+1/lib/
+geocoder
+2.0
+file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/geocoder-0.2.1/
+file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/geocoder-0.2.1/lib/
 google_maps_flutter
 2.1
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/google_maps_flutter-1.2.0/
@@ -163,9 +167,9 @@ octo_image
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/octo_image-0.3.0/
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/octo_image-0.3.0/lib/
 onesignal_flutter
-2.12
-file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/onesignal_flutter-3.0.0/
-file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/onesignal_flutter-3.0.0/lib/
+2.0
+file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/onesignal_flutter-2.6.4/
+file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/onesignal_flutter-2.6.4/lib/
 path
 2.12
 file:///C:/Users/phamq/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/path-1.8.0/

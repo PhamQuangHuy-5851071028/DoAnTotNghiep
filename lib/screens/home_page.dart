@@ -1,5 +1,6 @@
 import 'package:MyCovid19/models/chat_bot.dart';
 import 'package:MyCovid19/screens/credits_page.dart';
+import 'package:MyCovid19/widgets/stats_widgets/exithelper.dart';
 import '../widgets/home_page_widgets/home_categories.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -11,10 +12,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     configOneSignal();
   }
@@ -22,59 +21,66 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Scaffold(
-        resizeToAvoidBottomInset: false,
-        appBar: AppBar(
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-          leading: IconButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => CreditsScreen()),
-              );
-            },
-            icon: const Icon(
-              Icons.menu,
-              color: Colors.black,
-            ),
-          ),
-          actions: <Widget>[
-            IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => HomePageDialogflow()),
-                );
-              },
-              icon: const Icon(
-                Icons.chat,
-                color: Colors.black,
+      child: new WillPopScope(
+          child: new Scaffold(
+            resizeToAvoidBottomInset: false,
+            appBar: AppBar(
+              backgroundColor: Colors.transparent,
+              elevation: 0,
+              leading: IconButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => CreditsScreen()),
+                  );
+                },
+                icon: const Icon(
+                  Icons.menu,
+                  color: Colors.black,
+                ),
               ),
-            )
-          ],
-          centerTitle: true,
-          title: AutoSizeText(
-            "Theo dõi Covid-19",
-            style: TextStyle(
-              fontSize: 20,
-              fontFamily: "Montserrat",
-              color: Colors.black,
-              fontWeight: FontWeight.w600,
+              actions: <Widget>[
+                IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => HomePageDialogflow()),
+                    );
+                  },
+                  icon: const Icon(
+                    Icons.chat,
+                    color: Colors.black,
+                  ),
+                )
+              ],
+              centerTitle: true,
+              title: AutoSizeText(
+                "Theo dõi Covid-19",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: "Montserrat",
+                  color: Colors.black,
+                  fontWeight: FontWeight.w600,
+                ),
+                minFontSize: 14,
+                stepGranularity: 2,
+                maxLines: 1,
+              ),
             ),
-            minFontSize: 14,
-            stepGranularity: 2,
-            maxLines: 1,
+            body: HomeCategories(),
           ),
-        ),
-        body: HomeCategories(),
-      ),
+          onWillPop: () async {
+            return await DialogHelper.exit(context);
+          }),
     );
   }
 
-  void configOneSignal() async{
-    await OneSignal.shared.setAppId('9eec59d4-9b7c-4b7f-9875-74f80bfea3bd');
+  void configOneSignal() async {
+    await OneSignal.shared.init('9eec59d4-9b7c-4b7f-9875-74f80bfea3bd');
+    OneSignal.shared
+        .setInFocusDisplayType(OSNotificationDisplayType.notification);
+    OneSignal.shared
+        .setNotificationReceivedHandler((OSNotification notification) {});
   }
-
-
 }

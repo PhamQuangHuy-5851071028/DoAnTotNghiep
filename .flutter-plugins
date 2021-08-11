@@ -1,9 +1,10 @@
 # This is a generated file; do not edit or check into version control.
 flutter_plugin_android_lifecycle=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\flutter_plugin_android_lifecycle-1.0.11\\
+geocoder=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\geocoder-0.2.1\\
 google_maps_flutter=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\google_maps_flutter-1.2.0\\
 location=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\location-3.2.4\\
 location_web=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\location_web-1.0.1\\
-onesignal_flutter=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\onesignal_flutter-3.0.0\\
+onesignal_flutter=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\onesignal_flutter-2.6.4\\
 path_provider=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\path_provider-1.6.28\\
 path_provider_linux=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\path_provider_linux-0.0.1+2\\
 path_provider_macos=C:\\Users\\phamq\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\path_provider_macos-0.0.4+8\\

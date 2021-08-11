@@ -7,8 +7,8 @@ import '../../screens/precautions_page.dart';
 import '../../screens/symptoms_page.dart';
 import '../../screens/updates_page.dart';
 import '../../screens/virus_details_page.dart';
+import '../../screens/vacxin_page.dart';
 import '../../screens/stats_dashboard_screens/world_stat.dart';
-import '../../screens/health_declaration.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -45,6 +45,10 @@ class CategoryTab extends StatelessWidget {
         return () => Navigator.of(context).push(MaterialPageRoute(
             builder: (context) =>
                 VirusDetailsScreen(color: color, imgPath: imgPath)));
+      case ("Vắc-xin"):
+        return () => Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) =>
+                VacxinScreen(color: color, imgPath: imgPath)));
       case ("Thông tin hằng ngày"):
         return () => Navigator.of(context).push(MaterialPageRoute(
             builder: (context) => UpdatesScreen(
@@ -54,15 +58,12 @@ class CategoryTab extends StatelessWidget {
       case ("Thống kê"):
         return () => Navigator.of(context)
             .push(MaterialPageRoute(builder: (context) => WorldStatScreen()));
-      // case ("Khai báo y tế"):
-      //   return () => Navigator.of(context).push(
-      //       MaterialPageRoute(builder: (context) => healthDeclarationScreen()));
       case ("Khai báo y tế"):
-        return () => Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => healthDeclarationWebScreen()));
+        return () => Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => healthDeclarationWebScreen()));
       case ("Bản đồ Covid-19"):
-        return () => Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => mapCovidScreen()));
+        return () => Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => mapCovidScreen()));
     }
     return () {};
   }

@@ -25,43 +25,48 @@ class AffectedAreasContainer extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   //Affected Areas Text
-                  AutoSizeText(
-                    "Các vùng bị ảnh hưởng",
-                    style: TextStyle(
-                      fontFamily: "Montserrat",
-                      fontSize: 17,
-                      letterSpacing: 0.5,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.black,
-                    ),
-                    maxFontSize: 17,
-                  ),
-                  // More horiz icon
-                  IconButton(
-                    icon: AutoSizeText(
-                      "Xem thêm",
+                  Expanded(
+                    flex: 5,
+                    child: AutoSizeText(
+                      "Các vùng bị ảnh hưởng",
                       style: TextStyle(
-                        color: Colors.red,
                         fontFamily: "Montserrat",
                         fontSize: 17,
-                        fontWeight: FontWeight.w700,
+                        letterSpacing: 0.5,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.black,
                       ),
                       maxFontSize: 17,
-                      maxLines: 2,
-                      textAlign: TextAlign.center,
                     ),
-                    // icon: const Icon(
-                    //   Icons.more_horiz,
-                    //   color: Colors.red,
-                    //   size: 35,
-                    // ),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => timelineCovidScreen()),
-                      );
-                    },
+                  ),
+                  // More horiz icon
+                  Expanded(
+                    child: IconButton(
+                      icon: AutoSizeText(
+                        "Xem thêm",
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontFamily: "Montserrat",
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                        ),
+                        maxFontSize: 16,
+                        maxLines: 2,
+                        textAlign: TextAlign.center,
+                      ),
+                      // icon: const Icon(
+                      //   Icons.more_horiz,
+                      //   color: Colors.red,
+                      //   size: 35,
+                      // ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => timelineCovidScreen()),
+                        );
+                      },
+                    ),
                   )
                 ],
               ),
