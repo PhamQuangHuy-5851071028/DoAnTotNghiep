@@ -12,13 +12,23 @@ class CreditsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.indigo[900],
+        backgroundColor: Colors.white,
         title: Text(
           'Bản quyền',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.black),
         ),
         centerTitle: true,
+        leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+              size: 28,
+            )),
       ),
+
       extendBodyBehindAppBar: true,
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -26,14 +36,18 @@ class CreditsScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SizedBox(height: 10,),
+              SizedBox(
+                height: 10,
+              ),
               Image.asset(
                 'assets/launcher/launcher.png',
                 height: 200,
                 width: 200,
               ),
               //App Name
-              SizedBox(height: 10,),
+              SizedBox(
+                height: 10,
+              ),
               Text(
                 "MyCovid19",
                 style: TextStyle(
@@ -377,6 +391,7 @@ class CreditsScreen extends StatelessWidget {
     );
   }
 }
+
 _launchURL() async {
   const url = 'https://www.facebook.com/QHuyPham.3399';
   if (await canLaunch(url)) {

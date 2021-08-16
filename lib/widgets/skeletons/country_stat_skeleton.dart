@@ -17,7 +17,7 @@ class _CountryStatLoaderState extends State<CountryStatLoader> with TickerProvid
   @override
   void initState() {
     super.initState();
-    _controller=AnimationController(vsync: this,duration: Duration(milliseconds: 700),lowerBound: 0.5)
+    _controller=AnimationController(vsync: this,duration: Duration(milliseconds: 500),lowerBound: 0.5)
       ..addStatusListener((status) {
         if(status==AnimationStatus.completed) _controller.reverse();
         else if(status==AnimationStatus.dismissed) _controller.forward();

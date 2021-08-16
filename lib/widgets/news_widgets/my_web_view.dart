@@ -57,14 +57,14 @@ class _MyWebViewState extends State<MyWebView> {
                     valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
                   )
                 : Container(),
-            error!="" 
-            ? Expanded(
-                child: Align(
-                alignment: Alignment.center,
-                child: const Text("HTTP 404 Error: Failed to load resource",style: TextStyle(color: Colors.grey,fontSize: 30),),
-                ),
-            ) 
-            :Flexible(
+            // error!=""
+            // ? Expanded(
+            //     child: Align(
+            //     alignment: Alignment.center,
+            //     child: const Text("HTTP 404 Error: Failed to load resource",style: TextStyle(color: Colors.grey,fontSize: 30),),
+            //     ),
+            // )
+            Flexible(
               fit: FlexFit.loose,
               child: WebView(
                 initialUrl: widget.selectedUrl,

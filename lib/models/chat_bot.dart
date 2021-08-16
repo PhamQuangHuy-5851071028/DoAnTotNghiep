@@ -106,7 +106,11 @@ class _HomePageDialogflow extends State<HomePageDialogflow> {
               size: 28,
             )),
         centerTitle: true,
-        title: new Text("Tư vấn"),
+        title: new Text(
+          "Tư vấn",
+          style: TextStyle(color: Colors.black),
+        ),
+        backgroundColor: Colors.white,
       ),
       body: new Column(children: <Widget>[
         new Expanded(

@@ -5,23 +5,29 @@ import 'package:intl/intl.dart';
 // ignore: must_be_immutable
 class CaseBars extends StatefulWidget {
   final color;
-  int totalActive,totalDeaths,totalRecovered,totalCases;
+  int totalActive, totalDeaths, totalRecovered, totalCases;
 
-  CaseBars({Key key, this.color,this.totalActive,this.totalDeaths,this.totalRecovered,this.totalCases}) : super(key: key);
+  CaseBars(
+      {Key key,
+      this.color,
+      this.totalActive,
+      this.totalDeaths,
+      this.totalRecovered,
+      this.totalCases})
+      : super(key: key);
 
   @override
   _CaseBarsState createState() => _CaseBarsState();
 }
 
 class _CaseBarsState extends State<CaseBars> {
-  Duration _progressDuration=Duration(milliseconds: 300);
+  Duration _progressDuration = Duration(milliseconds: 300);
   final formatter = new NumberFormat("#,###");
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-
         AutoSizeText(
           "Thống kê tổng thể",
           style: TextStyle(
@@ -49,12 +55,10 @@ class _CaseBarsState extends State<CaseBars> {
                 width: 8,
                 height: 8,
               ),
-
               SizedBox(width: 15),
-
               Expanded(
                 child: const AutoSizeText(
-                  "Tổng số ca nhiễm",
+                  "Tổng số ca còn nhiễm",
                   style: TextStyle(
                     fontSize: 14,
                     fontFamily: "Montserrat",
@@ -64,7 +68,6 @@ class _CaseBarsState extends State<CaseBars> {
                   maxFontSize: 14,
                 ),
               ),
-
               AutoSizeText(
                 "${formatter.format(widget.totalActive)}",
                 style: TextStyle(
@@ -76,7 +79,6 @@ class _CaseBarsState extends State<CaseBars> {
                 ),
                 maxFontSize: 14,
               ),
-
             ],
           ),
         ),
@@ -96,14 +98,15 @@ class _CaseBarsState extends State<CaseBars> {
                 width: double.infinity,
                 height: 5,
               ),
-
               AnimatedContainer(
                 duration: _progressDuration,
                 decoration: BoxDecoration(
                   color: widget.color,
                   borderRadius: BorderRadius.circular(5),
                 ),
-                width: widget.totalActive/widget.totalCases*MediaQuery.of(context).size.width,
+                width: widget.totalActive /
+                    widget.totalCases *
+                    MediaQuery.of(context).size.width,
                 height: 5,
               ),
             ],
@@ -126,9 +129,7 @@ class _CaseBarsState extends State<CaseBars> {
                 width: 8,
                 height: 8,
               ),
-
               SizedBox(width: 15),
-
               Expanded(
                 child: AutoSizeText(
                   "Tổng số phục hồi",
@@ -141,7 +142,6 @@ class _CaseBarsState extends State<CaseBars> {
                   maxFontSize: 14,
                 ),
               ),
-
               AutoSizeText(
                 "${formatter.format(widget.totalRecovered)}",
                 style: TextStyle(
@@ -153,7 +153,6 @@ class _CaseBarsState extends State<CaseBars> {
                 ),
                 maxFontSize: 14,
               ),
-
             ],
           ),
         ),
@@ -173,14 +172,15 @@ class _CaseBarsState extends State<CaseBars> {
                 width: double.infinity,
                 height: 5,
               ),
-
               AnimatedContainer(
                 duration: _progressDuration,
                 decoration: BoxDecoration(
                   color: widget.color,
                   borderRadius: BorderRadius.circular(5),
                 ),
-                width: widget.totalRecovered/widget.totalCases*MediaQuery.of(context).size.width,
+                width: widget.totalRecovered /
+                    widget.totalCases *
+                    MediaQuery.of(context).size.width,
                 height: 5,
               ),
             ],
@@ -203,9 +203,7 @@ class _CaseBarsState extends State<CaseBars> {
                 width: 8,
                 height: 8,
               ),
-
               SizedBox(width: 15),
-
               Expanded(
                 child: const AutoSizeText(
                   "Tống số ca tử vong",
@@ -218,7 +216,6 @@ class _CaseBarsState extends State<CaseBars> {
                   maxFontSize: 14,
                 ),
               ),
-
               AutoSizeText(
                 "${formatter.format(widget.totalDeaths)}",
                 style: TextStyle(
@@ -249,14 +246,16 @@ class _CaseBarsState extends State<CaseBars> {
                 width: double.infinity,
                 height: 5,
               ),
-
               AnimatedContainer(
                 duration: _progressDuration,
                 decoration: BoxDecoration(
                   color: widget.color,
                   borderRadius: BorderRadius.circular(5),
                 ),
-                width:widget.totalDeaths/widget.totalCases*MediaQuery.of(context).size.width+30,
+                width: widget.totalDeaths /
+                        widget.totalCases *
+                        MediaQuery.of(context).size.width +
+                    30,
                 height: 5,
               ),
             ],

@@ -1,8 +1,11 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'curve_painter.dart';
+import 'package:intl/intl.dart';
 
 class SmallGraphPanel extends StatelessWidget {
+  final formatter = new NumberFormat("#,###");
+
   final String label;
   final IconData icon;
   final double value;
@@ -13,7 +16,8 @@ class SmallGraphPanel extends StatelessWidget {
   final bool isIncreasing;
   final titleGrp,numGrp;
 
-  const SmallGraphPanel({
+
+  SmallGraphPanel({
     @required this.label,
     @required this.icon,
     @required this.value,
@@ -23,6 +27,8 @@ class SmallGraphPanel extends StatelessWidget {
     @required this.lineColor,
     @required this.isIncreasing, @required this.titleGrp, @required this.numGrp,
   });
+
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -85,7 +91,8 @@ class SmallGraphPanel extends StatelessWidget {
                     LimitedBox(
                       maxHeight: constraint.maxHeight * 0.3,
                       child: AutoSizeText(
-                        (value / 1000).toStringAsPrecision(5) + "k",
+                        formatter.format(value),
+                        // (value).toStringAsPrecision(9),
                         style: TextStyle(
                           color: fontColor,
                           fontFamily: "Montserrat",

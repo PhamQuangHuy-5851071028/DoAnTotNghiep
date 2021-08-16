@@ -9,21 +9,20 @@ class VirusDetailsScreen extends StatelessWidget {
   static List<Map<String, String>> details = [
     {
       "detail": "Tóm tắt về Covid-19",
-      "desc":
-          "Coronavirus (còn được gọi là virus corona hay siêu vi corona) "
-            "là một nhóm gồm các loại virus thuộc phân họ Coronavirinae trong Họ Coronaviridae, theo Bộ Nidovirales. "
-              "Coronavirus gây bệnh ở các loài động vật có vú, bao gồm cả con người và chim. "
-                "Ở người, virus gây nhiễm trùng đường hô hấp thường là nhẹ nhưng trong trường hợp ít gặp có thể gây tử vong. "
-                  "Coronavirus là virus bao bọc với hệ gen ARN sợi đơn chiều dương và với một nucleocapsid đối xứng xoắn ốc. "
-                    "Kích thước bộ gen của coronavirus khoảng từ 26 đến 32 kilo base pair, lớn nhất đối với virus RNA.",
+      "desc": "Coronavirus (còn được gọi là virus corona hay siêu vi corona) "
+          "là một nhóm gồm các loại virus thuộc phân họ Coronavirinae trong Họ Coronaviridae, theo Bộ Nidovirales. "
+          "Coronavirus gây bệnh ở các loài động vật có vú, bao gồm cả con người và chim. "
+          "Ở người, virus gây nhiễm trùng đường hô hấp thường là nhẹ nhưng trong trường hợp ít gặp có thể gây tử vong. "
+          "Coronavirus là virus bao bọc với hệ gen ARN sợi đơn chiều dương và với một nucleocapsid đối xứng xoắn ốc. "
+          "Kích thước bộ gen của coronavirus khoảng từ 26 đến 32 kilo base pair, lớn nhất đối với virus RNA.",
     },
     {
       "detail": "Nguồn gốc",
       "desc": "Virus được cho là bắt nguồn từ cuối năm 2019 trong một chợ thực phẩm" +
           " ở thành phố Vũ Hán, Trung Quốc đã buôn bán trái phép động vật hoang dã. Các chuyên gia sức khỏe " +
           " cho rằng nó có thể bắt nguồn từ loài dơi và sau đó được truyền sang người " +
-    "có thể thông qua một loài động vật khác. \n \nCũng có báo cáo rằng dấu " +
-        "vật chủ trung gian có thể là tê tê.",
+          "có thể thông qua một loài động vật khác. \n \nCũng có báo cáo rằng dấu " +
+          "vật chủ trung gian có thể là tê tê.",
     },
     {
       "detail": "Mức độ nguy hiểm của nó như thế nào?",
@@ -42,18 +41,9 @@ class VirusDetailsScreen extends StatelessWidget {
           "miệng, mũi hoặc mắt của họ.",
     },
     {
-      "detail": "Có vắc xin nào cho coronavirus không?",
-      "desc": "Cho đến nay, không có loại thuốc cụ thể nào được khuyến nghị để ngăn ngừa hoặc điều trị loại coronavirus mới. " +
-          "Tuy nhiên, những người bị nhiễm vi rút nên được chăm sóc thích hợp để thuyên giảm " +
-          "và điều trị các triệu chứng \n \nMột số phương pháp điều trị cụ thể đang được điều tra và sẽ được kiểm tra thông qua " +
-          "thử nghiệm lâm sàng. Một số bác sĩ đang thử một loại thuốc chống vi-rút và cúm mạnh " +
-          "thuốc để điều trị những người bị nhiễm bệnh, nhưng khoa học không thể kết luận được liệu chúng " +
-          "có hiệu quả.",
-    },
-    {
       "detail": "Có 2 biến thể mới của Covid-19 là biến thể nào?",
-      "desc": "Biến thể Anh chủng B.1.1.7 xuất hiện tại Anh vào tháng 12-2020 được cho là có khả năng lây lan nhanh hơn so với các chủng SARS-CoV-2 trước đây. Đây là biến chủng đang gây nên sự bùng phát mạnh của đại dịch COVID-19 ở Anh cũng như các nước châu Âu. Chủng B.1.1.7 có khả năng lây nhiễm lớn, tải lượng virus tăng gấp bốn lần so với chủng trước đây. Thời gian đào thải mầm bệnh ra ngoài cũng rất cao và rất ngắn, tỷ lệ lây nhiễm tăng 70% so với chủng cũ."
-          +   "\n \nCòn biến thể phát hiện ở Nam Phi - B.1.351 - có tốc độ lây nhiễm nhanh hơn 20-200% so với chủng ban đầu, là chủng có tốc độ lây lan mạnh nhất hiện nay. Biến thể này có một số điểm tương đồng với biến thể lần đầu tiên được xác định ở Anh và dường như cũng dễ lây lan hơn, nhưng không có bằng chứng cho thấy gây chết người nhiều hơn.",
+      "desc": "Biến thể Anh chủng B.1.1.7 xuất hiện tại Anh vào tháng 12-2020 được cho là có khả năng lây lan nhanh hơn so với các chủng SARS-CoV-2 trước đây. Đây là biến chủng đang gây nên sự bùng phát mạnh của đại dịch COVID-19 ở Anh cũng như các nước châu Âu. Chủng B.1.1.7 có khả năng lây nhiễm lớn, tải lượng virus tăng gấp bốn lần so với chủng trước đây. Thời gian đào thải mầm bệnh ra ngoài cũng rất cao và rất ngắn, tỷ lệ lây nhiễm tăng 70% so với chủng cũ." +
+          "\n \nCòn biến thể phát hiện ở Nam Phi - B.1.351 - có tốc độ lây nhiễm nhanh hơn 20-200% so với chủng ban đầu, là chủng có tốc độ lây lan mạnh nhất hiện nay. Biến thể này có một số điểm tương đồng với biến thể lần đầu tiên được xác định ở Anh và dường như cũng dễ lây lan hơn, nhưng không có bằng chứng cho thấy gây chết người nhiều hơn.",
     },
   ];
 

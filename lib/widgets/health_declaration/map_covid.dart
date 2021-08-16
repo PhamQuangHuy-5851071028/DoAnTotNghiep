@@ -29,11 +29,11 @@ class _mapCovidState extends State<mapCovidScreen> {
           elevation: 0,
         ),
         body: WillPopScope(
-          onWillPop: ()async{
+          onWillPop: () async {
             String url = await controller.currentUrl();
-            if(url=="https://www.bing.com/covid/local/vietnam?vert=graph"){
+            if (url == "https://www.bing.com/covid/local/vietnam?vert=graph") {
               return true;
-            }else{
+            } else {
               controller.goBack();
               return false;
             }
@@ -42,17 +42,16 @@ class _mapCovidState extends State<mapCovidScreen> {
             body: Container(
               child: SafeArea(
                 child: WebView(
-                  initialUrl: "https://www.bing.com/covid/local/vietnam?vert=graph",
+                  initialUrl:
+                      "https://www.bing.com/covid/local/vietnam?vert=graph",
                   javascriptMode: JavascriptMode.unrestricted,
-                  onWebViewCreated: (WebViewController wc){
+                  onWebViewCreated: (WebViewController wc) {
                     controller = wc;
                   },
                 ),
               ),
             ),
           ),
-        )
-    );
+        ));
   }
 }
-

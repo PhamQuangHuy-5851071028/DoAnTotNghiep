@@ -1,3 +1,4 @@
+import 'package:MyCovid19/screens/covid_chart.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -14,17 +15,9 @@ class WorldStatsImage extends StatelessWidget {
           decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(16)),
-          padding: const EdgeInsets.fromLTRB(12, 20, 12, 20),
+          padding: const EdgeInsets.fromLTRB(5, 0, 5, 5),
           child: Container(
-            child: Image(
-              width:
-              MediaQuery.of(context).size.width > 360.0
-                  ? 350
-                  : 300,
-              fit: BoxFit.fitWidth,
-              image: AssetImage(
-                  "assets/stats/global_stats.png"),
-            ),
+            child: CovidChart(),
           ),
         ),
       ),
